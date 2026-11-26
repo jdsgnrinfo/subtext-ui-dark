@@ -1,0 +1,235 @@
+{
+	"name": "Antigravity",
+	"author": "Antigravity Theme for Sublime Text",
+	"variables": {
+		"bg": "#111111",
+		"bg_elevated": "#1C1C1C",
+		"bg_surface": "#242424",
+		"bg_active": "#2E2E2E",
+		"border": "#2A2A2A",
+		"fg": "#E4E4E4",
+		"fg_secondary": "#B0B0B0",
+		"fg_muted": "#6E6E73",
+		"fg_subtle": "#525257",
+		"caret": "#FFFFFF",
+		"selection": "#2C2C30",
+		"selection_border": "#424248",
+		"line_highlight": "#181818",
+
+		"blue": "#8AB4F8",
+		"ice_blue": "#B4D0FA",
+		"purple": "#C4A5FF",
+		"green": "#81C995",
+		"yellow": "#FDD663",
+		"orange": "#F5A97F",
+		"cyan": "#78D9EC",
+		"red": "#F28B82"
+	},
+	"globals": {
+		"background": "var(bg)",
+		"foreground": "var(fg)",
+		"invisibles": "#333336",
+		"caret": "var(caret)",
+		"block_caret": "color(var(fg) alpha(0.25))",
+		"line_highlight": "var(line_highlight)",
+		"misspelling": "var(red)",
+		"fold_marker": "var(fg_muted)",
+		"minimap_border": "var(border)",
+		"accent": "var(fg)",
+
+		"gutter": "var(bg)",
+		"gutter_foreground": "var(fg_subtle)",
+		"gutter_foreground_highlight": "var(fg_secondary)",
+
+		"line_diff_width": "2",
+		"line_diff_added": "var(green)",
+		"line_diff_modified": "var(blue)",
+		"line_diff_deleted": "var(red)",
+
+		"selection": "var(selection)",
+		"selection_border": "var(selection_border)",
+		"selection_corner_style": "round",
+		"selection_corner_radius": "3",
+		"inactive_selection": "#202024",
+
+		"highlight": "#525257",
+		"find_highlight": "#3D3520",
+		"find_highlight_foreground": "var(fg)",
+		"scroll_highlight": "#424248",
+		"scroll_selected_highlight": "var(blue)",
+
+		"guide": "#202022",
+		"active_guide": "#3A3A3E",
+		"stack_guide": "#2A2A2E",
+
+		"brackets_options": "underline",
+		"brackets_foreground": "var(fg_secondary)",
+		"bracket_contents_options": "underline",
+		"bracket_contents_foreground": "var(fg_muted)",
+		"tags_options": "stippled_underline",
+		"tags_foreground": "var(blue)",
+
+		"shadow": "#000000",
+		"shadow_width": "8"
+	},
+	"rules": [
+		{
+			"name": "Comment",
+			"scope": "comment, punctuation.definition.comment",
+			"foreground": "var(fg_muted)",
+			"font_style": "italic"
+		},
+		{
+			"name": "String",
+			"scope": "string, string.quoted",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "String Escape & RegExp",
+			"scope": "constant.character.escape, string.regexp",
+			"foreground": "var(cyan)"
+		},
+		{
+			"name": "String Interpolation",
+			"scope": "punctuation.section.interpolation, meta.interpolation punctuation.definition",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "Number & Constant",
+			"scope": "constant.numeric, constant.language, constant.other, support.constant",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Keyword & Storage",
+			"scope": "keyword, storage.type, storage.modifier",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "Operator",
+			"scope": "keyword.operator",
+			"foreground": "var(fg_secondary)"
+		},
+		{
+			"name": "Function Name",
+			"scope": "entity.name.function, support.function, variable.function, meta.function-call entity.name.function",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Class, Type & Struct",
+			"scope": "entity.name.class, entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.other.inherited-class, support.type, support.class",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Variable",
+			"scope": "variable, variable.other.readwrite",
+			"foreground": "var(fg)"
+		},
+		{
+			"name": "Variable Parameter",
+			"scope": "variable.parameter",
+			"foreground": "var(ice_blue)"
+		},
+		{
+			"name": "Variable Language (this, self, super)",
+			"scope": "variable.language",
+			"foreground": "var(red)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Property / Member",
+			"scope": "variable.other.member, meta.property-name, support.type.property-name",
+			"foreground": "var(ice_blue)"
+		},
+		{
+			"name": "HTML / XML Tag",
+			"scope": "entity.name.tag",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "HTML / XML Attribute",
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(ice_blue)"
+		},
+		{
+			"name": "CSS Selector",
+			"scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "CSS Property",
+			"scope": "support.type.property-name.css",
+			"foreground": "var(ice_blue)"
+		},
+		{
+			"name": "CSS Value",
+			"scope": "support.constant.property-value.css, meta.property-value.css",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "JSON Keys",
+			"scope": "meta.mapping.key.json string.quoted.double.json",
+			"foreground": "var(ice_blue)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.separator, punctuation.terminator, punctuation.accessor, punctuation.section.brackets, punctuation.section.parens, punctuation.section.braces",
+			"foreground": "var(fg_muted)"
+		},
+		{
+			"name": "Markdown Heading",
+			"scope": "markup.heading, entity.name.section",
+			"foreground": "var(fg)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Markdown Bold",
+			"scope": "markup.bold",
+			"foreground": "var(fg)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Markdown Italic",
+			"scope": "markup.italic",
+			"foreground": "var(fg_secondary)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Markdown Inline Code",
+			"scope": "markup.raw.inline, markup.raw.block",
+			"foreground": "var(blue)",
+			"background": "#1C1C1C"
+		},
+		{
+			"name": "Markdown Link",
+			"scope": "markup.underline.link",
+			"foreground": "var(cyan)"
+		},
+		{
+			"name": "Diff Inserted",
+			"scope": "markup.inserted",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Diff Deleted",
+			"scope": "markup.deleted",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Diff Changed",
+			"scope": "markup.changed",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"foreground": "var(fg)",
+			"background": "color(var(red) alpha(0.35))"
+		},
+		{
+			"name": "Invalid Deprecated",
+			"scope": "invalid.deprecated",
+			"foreground": "var(yellow)",
+			"font_style": "italic"
+		}
+	]
+}
