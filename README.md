@@ -2,6 +2,8 @@
 
 Tema oscuro minimalista para **Sublime Text 4** inspirado en la interfaz de **Antigravity**.
 
+![subtext-ui-dark preview](preview.jpg)
+
 ## Características
 - **Editor obsidian:** fondo principal `#111111` con resaltado de sintaxis balanceado.
 - **Interfaz de alto contraste suave:** sidebar, barra superior, pestañas y barra de estado en `#242426`.
