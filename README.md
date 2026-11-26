@@ -1,6 +1,6 @@
 # subtext-ui-dark
 
-Tema oscuro minimalista para **Sublime Text 4** inspirado en la interfaz de **Antigravity**.
+Tema oscuro minimalista para **Sublime Text 4**.
 
 ![subtext-ui-dark preview](preview.jpg)
 
