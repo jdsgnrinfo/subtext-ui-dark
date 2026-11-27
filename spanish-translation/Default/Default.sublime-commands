@@ -1,0 +1,168 @@
+[
+	{ "caption": "Aritmética", "command": "arithmetic" },
+
+	{ "caption": "Ajustar párrafo", "command": "wrap_lines" },
+
+	{ "caption": "Ajuste de línea: Alternar", "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+
+	{ "caption": "Convertir formato: Tipo Título", "command": "title_case" },
+	{ "caption": "Convertir formato: MAYÚSCULAS", "command": "upper_case" },
+	{ "caption": "Convertir formato: minúsculas", "command": "lower_case" },
+	{ "caption": "Convertir formato: Invertir mayúsculas/minúsculas", "command": "swap_case" },
+	{ "caption": "Convertir formato: lowerCamelCase", "command": "convert_ident_case", "args": {"case": "title", "first_case": "lower"} },
+	{ "caption": "Convertir formato: UpperCamelCase", "command": "convert_ident_case", "args": {"case": "title"} },
+	{ "caption": "Convertir formato: snake_case", "command": "convert_ident_case", "args": {"separator": "_", "case": "lower"} },
+	{ "caption": "Convertir formato: kebab-case", "command": "convert_ident_case", "args": {"separator": "-", "case": "lower"} },
+
+	{ "caption": "Alternar comentario", "command": "toggle_comment", "args": {"block": false} },
+	{ "caption": "Alternar comentario de bloque", "command": "toggle_comment", "args": {"block": true} },
+
+	{ "caption": "Marcadores: Alternar", "command": "toggle_bookmark", "args": {"toggle_line": true } },
+	{ "caption": "Marcadores: Seleccionar siguiente", "command": "next_bookmark" },
+	{ "caption": "Marcadores: Seleccionar anterior", "command": "prev_bookmark" },
+	{ "caption": "Marcadores: Borrar todos", "command": "clear_bookmarks" },
+	{ "caption": "Marcadores: Seleccionar todos", "command": "select_all_bookmarks" },
+
+	{ "caption": "Saltar al corchete correspondiente", "command": "move_to", "args": {"to": "brackets"} },
+
+	{ "caption": "Sangría: Convertir a tabulaciones", "command": "unexpand_tabs", "args": {"set_translate_tabs": true} },
+	{ "caption": "Sangría: Convertir a espacios", "command": "expand_tabs", "args": {"set_translate_tabs": true} },
+	{ "caption": "Sangría: Reaplicar sangría a líneas", "command": "reindent", "args": {"single_line": false} },
+	{ "caption": "Sangría: Detectar", "command": "detect_indentation" },
+
+	{ "caption": "Ver: Alternar barra lateral", "command": "toggle_side_bar" },
+	{ "caption": "Ver: Alternar archivos abiertos en barra lateral", "command": "toggle_show_open_files" },
+	{ "caption": "Ver: Alternar minimapa", "command": "toggle_minimap" },
+	{ "caption": "Ver: Alternar pestañas", "command": "toggle_tabs" },
+	{ "caption": "Ver: Alternar barra de estado", "command": "toggle_status_bar" },
+	{ "caption": "Ver: Alternar barra de menú", "command": "toggle_menu" },
+	{ "caption": "Ver: Alternar pantalla completa", "command": "toggle_full_screen" },
+	{ "caption": "Ver: Alternar modo sin distracciones", "command": "toggle_distraction_free" },
+
+	{ "caption": "Proyecto: Guardar como", "command": "save_project_and_workspace_as" },
+	{ "caption": "Proyecto: Cerrar", "command": "close_workspace" },
+	{ "caption": "Proyecto: Agregar carpeta", "command": "prompt_add_folder" },
+	{ "caption": "Proyecto: Actualizar carpetas", "command": "refresh_folder_list" },
+	{ "caption": "Proyecto: Editar proyecto",  "command": "open_file", "args": {"file": "${project}"} },
+
+	{ "caption": "Ver archivo de paquete", "command": "view_resource" },
+
+	{ "caption": "Preferencias: Explorar paquetes", "command": "open_dir", "args": {"dir": "$packages"} },
+	{
+		"caption": "Preferencias: Configuración",
+		"command": "edit_settings", "args":
+		{
+			"base_file": "${packages}/Default/Preferences.sublime-settings",
+			"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+		}
+	},
+	{ "caption": "Preferencias: Configuración – Específica de sintaxis", "command": "edit_syntax_settings" },
+	{
+		"caption": "Preferencias: Configuración – Sin distracciones",
+		"command": "edit_settings", "args":
+		{
+			"base_file": "${packages}/Default/Distraction Free.sublime-settings",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
+	{
+		"caption": "Preferencias: Atajos de teclado",
+		"command": "edit_settings", "args":
+		{
+			"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+			"default": "[\n\t$0\n]\n"
+		}
+	},
+	{
+		"caption": "Preferencias: Atajos de ratón",
+		"command": "edit_settings", "args":
+		{
+			"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+			"default": "[\n\t$0\n]\n"
+		}
+	},
+
+	{ "caption": "Instalar Package Control", "command": "install_package_control" },
+	{ "caption": "Habilitar Package Control", "command": "enable_package_control" },
+
+	{ "caption": "Interfaz: Seleccionar esquema de colores", "command": "select_color_scheme" },
+	{ "caption": "Interfaz: Seleccionar tema", "command": "select_theme" },
+	{ "caption": "Interfaz: Personalizar esquema de colores", "command": "customize_color_scheme" },
+	{ "caption": "Interfaz: Personalizar tema", "command": "customize_theme" },
+
+	{ "caption": "Archivo: Guardar todos", "command": "save_all" },
+	{ "caption": "Archivo: Revertir", "command": "revert" },
+	{ "caption": "Archivo: Reabrir archivo como imagen", "command": "force_reopen_as", "args": {"type": "image"},  },
+	{ "caption": "Archivo: Reabrir archivo como texto", "command": "force_reopen_as", "args": {"type": "text"},  },
+	{ "caption": "Archivo: Nueva vista del archivo", "command": "clone_file" },
+	{ "caption": "Archivo: Vista dividida", "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true} },
+	{ "caption": "Archivo: Cerrar todos", "command": "close_all" },
+	{ "caption": "Archivo: Renombrar archivo", "command": "rename_file" },
+	{ "caption": "Archivo: Imprimir", "command": "html_print" },
+
+	{ "caption": "Sublime Merge: Abrir repositorio", "command": "sublime_merge_open_repo" },
+	{ "caption": "Sublime Merge: Historial del archivo", "command": "sublime_merge_file_history" },
+	{ "caption": "Sublime Merge: Historial de la carpeta", "command": "sublime_merge_folder_history" },
+	{ "caption": "Sublime Merge: Anotaciones del archivo", "command": "sublime_merge_blame_file" },
+
+	{ "caption": "Abrir en el navegador", "command": "open_in_browser" },
+	{ "caption": "Abrir carpeta contenedora…", "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+	{ "caption": "Abrir terminal aquí…", "command": "open_terminal", "args": {"dir": "$file_path"} },
+	{ "caption": "Copiar ruta del archivo", "command": "copy_path" },
+
+	{ "caption": "HTML: Envolver selección con etiqueta", "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" } },
+	{ "caption": "HTML: Codificar caracteres especiales", "command": "encode_html_entities" },
+
+	{ "caption": "Aplicar Rot13 a la selección", "command": "rot13" },
+
+	{ "caption": "Ordenar líneas", "command": "sort_lines", "args": {"case_sensitive": false} },
+	{ "caption": "Ordenar líneas (distingue mayúsculas)", "command": "sort_lines", "args": {"case_sensitive": true} },
+
+	{ "caption": "Selección: Dividir en líneas", "command": "split_selection_into_lines" },
+	{ "caption": "Selección: Seleccionar todo", "command": "select_all" },
+	{ "caption": "Selección: Expandir", "command": "expand_selection", "args": {"to": "smart"} },
+	{ "caption": "Selección: Expandir a la línea", "command": "expand_selection", "args": {"to": "line"} },
+	{ "caption": "Selección: Expandir a la línea superior", "command": "expand_selection", "args": {"to": "line_prev"} },
+	{ "caption": "Selección: Expandir a la palabra", "command": "find_under_expand" },
+	{ "caption": "Selección: Expandir al bloque", "command": "expand_selection_to_paragraph" },
+	{ "caption": "Selección: Expandir al párrafo", "command": "expand_selection_to_paragraph", "args": {"markup_aware": true} },
+	{ "caption": "Selección: Expandir al ámbito", "command": "expand_selection", "args": {"to": "scope"} },
+	{ "caption": "Selección: Expandir a corchetes", "command": "expand_selection", "args": {"to": "brackets"} },
+	{ "caption": "Selección: Expandir a la sangría", "command": "expand_selection", "args": {"to": "indentation"} },
+	{ "caption": "Selección: Agregar línea anterior", "command": "select_lines", "args": {"forward": false} },
+	{ "caption": "Selección: Agregar línea siguiente", "command": "select_lines", "args": {"forward": true} },
+
+	{ "caption": "Historial: Revertir bloque de cambios", "command": "revert_hunk" },
+	{ "caption": "Historial: Revertir modificación", "command": "revert_modification" },
+	{ "caption": "Historial: Siguiente modificación", "command": "next_modification" },
+	{ "caption": "Historial: Modificación anterior", "command": "prev_modification" },
+	{ "caption": "Historial: Alternar diferencias en línea", "command": "toggle_inline_diff" },
+
+	{ "caption": "Permutar líneas: Invertir", "command": "permute_lines", "args": {"operation": "reverse"} },
+	{ "caption": "Permutar líneas: Únicas", "command": "permute_lines", "args": {"operation": "unique"} },
+	{ "caption": "Permutar líneas: Mezclar", "command": "permute_lines", "args": {"operation": "shuffle"} },
+
+	{ "caption": "Permutar selecciones: Ordenar", "command": "sort_selection", "args": {"case_sensitive": false} },
+	{ "caption": "Permutar selecciones: Ordenar (distingue mayúsculas)", "command": "sort_selection", "args": {"case_sensitive": true} },
+	{ "caption": "Permutar selecciones: Invertir", "command": "permute_selection", "args": {"operation": "reverse"} },
+	{ "caption": "Permutar selecciones: Únicas", "command": "permute_selection", "args": {"operation": "unique"} },
+	{ "caption": "Permutar selecciones: Mezclar", "command": "permute_selection", "args": {"operation": "shuffle"} },
+
+	{ "caption": "Plegado de código: Plegar", "command": "fold" },
+	{ "caption": "Plegado de código: Plegar todo", "command": "fold_by_level", "args": {"level": 1} },
+	{ "caption": "Plegado de código: Desplegar", "command": "unfold" },
+	{ "caption": "Plegado de código: Desplegar todo", "command": "unfold_all" },
+	{ "caption": "Plegado de código: Plegar atributos de etiqueta", "command": "fold_tag_attributes" },
+
+	{ "caption": "Eliminar espacios al final de línea", "command": "trim_trailing_white_space" },
+
+	{ "caption": "Desarrollo de plugins: Perfilar eventos", "command": "profile_plugins" },
+	{ "caption": "Desarrollo de plugins: Convertir sintaxis a .sublime-syntax", "command": "convert_syntax" },
+	{ "caption": "Desarrollo de plugins: Convertir esquema a .sublime-color-scheme", "command": "convert_color_scheme" },
+
+	{ "caption": "Ayuda: Documentación", "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"} },
+	{ "caption": "Ayuda: Estado de indexación", "command": "show_progress_window" },
+	{ "caption": "Ayuda: Buscar actualizaciones", "command": "update_check", "platform": "!Linux" },
+	{ "caption": "Ayuda: Registro de cambios", "command": "show_changelog" },
+	{ "caption": "Ayuda: Acerca de", "command": "show_about_window" },
+]

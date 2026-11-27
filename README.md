@@ -53,3 +53,9 @@ Si editas `Antigravity.sublime-theme`, `Antigravity.sublime-color-scheme` o los 
 ```powershell
 .\build.ps1
 ```
+
+---
+
+## Traducción al español (opcional)
+Este repositorio incluye de forma independiente una traducción al español de los menús y la paleta de comandos de Sublime Text 4 dentro de la carpeta [`spanish-translation/`](spanish-translation/).  
+Es totalmente opcional y no se instala junto con el tema; consulta [spanish-translation/README.md](spanish-translation/README.md) para instalarla o desinstalarla.

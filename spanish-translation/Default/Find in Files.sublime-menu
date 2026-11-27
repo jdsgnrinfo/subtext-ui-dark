@@ -1,0 +1,10 @@
+[
+	{ "command": "clear_location", "caption": "Limpiar" },
+	{ "command": "add_directory", "caption": "Agregar carpeta" },
+	{ "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Agregar filtro de inclusión" },
+	{ "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Agregar filtro de exclusión" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "Agregar filtros del proyecto" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Agregar carpetas abiertas" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Agregar archivos abiertos" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Agregar archivo actual" },
+]
